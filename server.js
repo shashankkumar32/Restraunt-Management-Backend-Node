@@ -26,7 +26,7 @@ app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/bills", require("./routes/billsRoute"));
 app.use('/api/category', require("./routes/categoryRoute"));
 //port
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 //listen
 app.listen(PORT, () => {
