@@ -21,7 +21,14 @@ const getBillsController = async (req, res) => {
     console.log(error);
   }
 };
-
+// const getBillsController = async (req, res) => {
+//   try {
+//     const bills = await billsModel.find().sort({ createdAt: -1 });
+//     res.send(bills);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 module.exports = {
   addBillsController,
   getBillsController,
