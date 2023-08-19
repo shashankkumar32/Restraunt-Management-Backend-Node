@@ -12,23 +12,23 @@ const billSchema = mongoose.Schema(
     },
     totalAmount: {
       type: Number,
-      required: true,
+      // required: true,
     },
     subTotal: {
       type: Number,
-      required: true,
+      // required: true,
     },
     tax: {
       type: Number,
-      required: true,
+      // required: true,
     },
     paymentMode: {
       type: String,
-      required: true,
+      // required: true,
     },
     cartItems: {
       type: Array,
-      required: true,
+      // required: true,
     },
     date: {
       type: Date,

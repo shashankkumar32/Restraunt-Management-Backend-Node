@@ -11,17 +11,26 @@ const getItemController = async (req, res) => {
 };
 
 //add items
+// const addItemController = async (req, res) => {
+//   try {
+//     const newItem = new itemModel(req.body);
+//     await newItem.save();
+//     res.status(201).send("Item Created Successfully!");
+//   } catch (error) {
+//     res.status(400).send("error", error);
+//     console.log(error);
+//   }
+// };
 const addItemController = async (req, res) => {
   try {
     const newItem = new itemModel(req.body);
     await newItem.save();
     res.status(201).send("Item Created Successfully!");
   } catch (error) {
-    res.status(400).send("error", error);
-    console.log(error);
+    console.error(error);
+    res.status(400).send("Error: " + error.message);
   }
 };
-
 //update item
 const editItemController = async (req, res) => {
   try {
