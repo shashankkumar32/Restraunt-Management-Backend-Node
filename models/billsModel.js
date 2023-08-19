@@ -30,12 +30,12 @@ const billSchema = mongoose.Schema(
       type: Array,
       // required: true,
     },
-    // date: {
-    //   type: Date,
-    //   default: Date.now(),
-    // },
+    date: {
+      type: Date,
+      default: Date.now(),
+    },
   },
-  { timestamp: true }
+  { timestamps: true }
 );
 
 const Bills = mongoose.model("bills", billSchema);
