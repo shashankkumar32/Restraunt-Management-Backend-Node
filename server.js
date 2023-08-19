@@ -29,6 +29,6 @@ app.use('/api/category', require("./routes/categoryRoute"));
 const port = process.env.PORT || 3000;
 
 //listen
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`Server Running On Port ${PORT}`.bgCyan.white);
 });
